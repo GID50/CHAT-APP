@@ -21,7 +21,7 @@ const server = require("http").createServer(app);
 const PORT = 5001;
 const io = require("socket.io")(server, {
   cors: {
-    origin: "*",
+    origin: "https://chat-app-nnvy.onrender.com",
     methods: ["GET", "POST"],
   },
 });
